@@ -1,5 +1,7 @@
-import { useState } from 'react'
+
+import { Routes, Route, } from 'react-router-dom';
 import AllPlayers from './Components/AllPlayers'
+import SinglePlayer from './Components/SinglePlayer';
 import './App.css'
 
 
@@ -7,11 +9,11 @@ import './App.css'
 
 function App() {
 
-
   return (
-    <div>
-    <AllPlayers /> 
-    </div>
+    <Routes>
+      <Route path="/" element={<AllPlayers />} />
+      <Route path="/:playerId" element={<SinglePlayer />}/>
+    </Routes>
   )
 }
 
