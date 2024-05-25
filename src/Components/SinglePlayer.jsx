@@ -43,11 +43,11 @@ function SinglePlayer() {
 
   return (
     <div>
-      <img src={singlePlayer.imageUrl} alt={singlePlayer.name} />
+      <img src={singlePlayer.imageUrl} alt={singlePlayer.name} width="400"/>
       <h2>{singlePlayer.name}</h2>
       <h2>{singlePlayer.breed}</h2>
       <h2>{singlePlayer.status}</h2>
-      <h2>{singlePlayer.team}</h2>
+      <h2>{singlePlayer.teamId}</h2>
       <button
         onClick={() => {
           DeletePlayer(singlePlayer.id);
