@@ -26,7 +26,7 @@ function AllPlayers() {
     getAllPlayers();
   }, []);
 
-  const handleSearchClick = (targetName) => {
+  const handleSearchClick = () => {
     setFilteredPlayers(
       AllPlayers.filter((doggy) => {
         return (doggy.name === targetName);
